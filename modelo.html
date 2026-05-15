@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RetroStart | Ficha profesional del modelo</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<meta name="description" content="Ficha profesional de máquinas arcade RetroStart: diseño personalizado, sistema Windows, HyperSpin, controles arcade y terminaciones premium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#ff180f;--dark:#020304;--muted:rgba(255,255,255,.72);--line:rgba(255,255,255,.12)}
+html,body{min-height:100%;background:#020304;color:#fff;font-family:'Rajdhani',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 70% 30%,rgba(255,24,15,.16),transparent 33%),radial-gradient(circle at 52% 54%,rgba(0,120,255,.26),transparent 38%),linear-gradient(115deg,#020202 0%,#061018 48%,#020202 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(circle at 50% 50%,#000,transparent 74%)}
+.page{width:min(1500px,94vw);margin:0 auto}
+.header{min-height:82px;display:grid;grid-template-columns:310px 1fr 190px;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid rgba(255,24,15,.65);background:rgba(0,0,0,.82);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}
+.logo{text-decoration:none;color:#fff;font-family:'Orbitron',sans-serif;line-height:1}
+.logo strong{display:block;font-size:31px;font-weight:900;font-style:italic;letter-spacing:1px}
+.logo span{color:var(--red)}.logo small{display:block;margin-top:7px;font-size:10px;letter-spacing:7px;color:#eee}
+.nav{display:flex;justify-content:center;gap:26px;flex-wrap:wrap}
+.nav a{color:#fff;text-decoration:none;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:800}
+.nav a:hover,.nav a.active{color:var(--red)}
+.whatsapp,.btn{min-height:48px;padding:0 20px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--red);border-radius:12px;color:#fff;text-decoration:none;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:900;background:linear-gradient(90deg,rgba(255,24,15,.28),rgba(80,0,0,.32));box-shadow:0 0 22px rgba(255,24,15,.18)}
+.whatsapp{justify-self:end}
+.hero{display:grid;grid-template-columns:minmax(330px,470px) 1fr;gap:44px;align-items:center;padding:48px 0 30px;min-height:calc(100vh - 82px)}
+.kicker{color:var(--red);font-family:'Orbitron',sans-serif;font-size:13px;font-weight:900;letter-spacing:4px;margin-bottom:14px}
+h1{font-family:'Orbitron',sans-serif;font-size:clamp(42px,5vw,78px);line-height:.9;text-transform:uppercase;letter-spacing:1px}
+h1 span{display:block;color:var(--red);text-shadow:0 0 28px rgba(255,24,15,.35)}
+.lead{margin-top:22px;color:#f2f2f2;font-size:21px;line-height:1.42;max-width:560px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn.secondary{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.18);box-shadow:none}
+.media{position:relative;min-height:640px;display:grid;place-items:center}
+.media:before{content:"";position:absolute;width:82%;height:54%;bottom:4%;border-radius:50%;background:radial-gradient(ellipse,rgba(0,140,255,.38),transparent 68%);filter:blur(18px)}
+.machine{position:relative;z-index:2;width:min(720px,100%);max-height:760px;object-fit:contain;filter:drop-shadow(0 56px 68px rgba(0,0,0,.9)) drop-shadow(0 0 28px rgba(0,120,255,.24));animation:float 5.5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.price-card{margin-top:22px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:18px 20px;border:1px solid rgba(255,24,15,.38);border-radius:20px;background:rgba(0,0,0,.48)}
+.price-card small{display:block;color:#aaa;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.price-card strong{font-family:'Orbitron',sans-serif;color:var(--red);font-size:31px;font-weight:900}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.badge{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.055);border-radius:999px;padding:9px 13px;color:#eee;font-size:15px;font-weight:700}
+.section{padding:34px 0}
+.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:20px}
+.section-title h2{font-family:'Orbitron',sans-serif;font-size:clamp(25px,3vw,42px);line-height:1;text-transform:uppercase}
+.section-title h2 span{color:var(--red)}.section-title p{max-width:590px;color:var(--muted);font-size:18px;line-height:1.35}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:22px;padding:22px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:0 22px 48px rgba(0,0,0,.25)}
+.card .icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;margin-bottom:15px;color:var(--red);font-size:25px;background:rgba(255,24,15,.09);border:1px solid rgba(255,24,15,.25)}
+.card h3{font-family:'Orbitron',sans-serif;font-size:15px;line-height:1.2;text-transform:uppercase;margin-bottom:10px}
+.card p{color:var(--muted);font-size:17px;line-height:1.36}
+.spec-table{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.spec-row{display:flex;justify-content:space-between;gap:18px;padding:17px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.34)}
+.spec-row b{font-family:'Orbitron',sans-serif;font-size:12px;color:#fff;text-transform:uppercase;letter-spacing:.5px}
+.spec-row span{color:#ddd;text-align:right;font-size:17px}
+.gallery{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:16px}
+.gallery .shot{min-height:240px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:rgba(0,0,0,.52);display:grid;place-items:center}
+.gallery .shot:first-child{grid-row:span 2;min-height:500px}
+.gallery img{width:100%;height:100%;object-fit:contain;padding:18px}
+.gallery .crop img{object-fit:cover;padding:0;transform:scale(1.38)}
+.gallery .controls img{object-fit:cover;padding:0;transform:scale(1.9) translateY(-3%)}
+.gallery .back img{object-fit:cover;padding:0;transform:scale(1.12)}
+.final-cta{margin:38px 0 56px;padding:30px;border:1px solid rgba(255,24,15,.38);border-radius:28px;background:linear-gradient(90deg,rgba(255,24,15,.18),rgba(255,255,255,.04));display:flex;justify-content:space-between;gap:24px;align-items:center}
+.final-cta h2{font-family:'Orbitron',sans-serif;font-size:30px;text-transform:uppercase}.final-cta p{color:var(--muted);font-size:18px;margin-top:8px}
+@media(max-width:1100px){.header{grid-template-columns:1fr}.whatsapp{justify-self:start}.hero{grid-template-columns:1fr}.media{min-height:520px}.grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}.gallery .shot:first-child{grid-column:1/-1;grid-row:auto}}
+@media(max-width:700px){.page{width:min(93vw,540px)}.logo strong{font-size:25px}.logo small{font-size:9px;letter-spacing:5px}.nav{justify-content:flex-start;gap:8px}.nav a{font-size:11px;border:1px solid rgba(255,24,15,.25);border-radius:12px;padding:10px}.whatsapp,.btn{width:100%}.hero{padding-top:28px;gap:12px}.media{min-height:410px}.grid,.spec-table,.gallery{grid-template-columns:1fr}.price-card,.final-cta{grid-template-columns:1fr;display:grid}.final-cta{text-align:center}.section-title{display:block}.section-title p{margin-top:10px}}
+
+.floating-whatsapp{
+position:fixed;
+right:22px;
+bottom:22px;
+z-index:9999;
+width:72px;
+height:72px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#25d366,#0d8b45);
+color:#fff;
+font-size:34px;
+text-decoration:none;
+box-shadow:0 0 35px rgba(37,211,102,.65);
+animation:pulsewhats 2s infinite;
+}
+@keyframes pulsewhats{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
+.compare-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-top:20px;
+}
+.compare-card{
+padding:24px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.12);
+background:rgba(255,255,255,.04);
+}
+.compare-card h3{
+font-family:'Orbitron',sans-serif;
+margin-bottom:16px;
+font-size:22px;
+}
+.compare-card ul{
+list-style:none;
+padding:0;
+}
+.compare-card li{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+font-size:18px;
+}
+.compare-card.retro{
+border-color:rgba(255,24,15,.45);
+box-shadow:0 0 28px rgba(255,24,15,.18);
+}
+.testimonials{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+.testimonial{
+padding:24px;
+border-radius:20px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+}
+.testimonial p{
+font-size:18px;
+line-height:1.5;
+color:#ddd;
+margin-bottom:14px;
+}
+.testimonial strong{
+color:#ff180f;
+font-family:'Orbitron',sans-serif;
+font-size:14px;
+}
+.category-links{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+margin-top:22px;
+}
+.category-links a{
+padding:22px;
+border-radius:18px;
+text-decoration:none;
+color:#fff;
+background:linear-gradient(180deg,rgba(255,24,15,.14),rgba(255,255,255,.04));
+border:1px solid rgba(255,24,15,.25);
+font-family:'Orbitron',sans-serif;
+font-size:16px;
+transition:.25s;
+}
+.category-links a:hover{
+transform:translateY(-5px);
+box-shadow:0 0 28px rgba(255,24,15,.25);
+}
+body:before{
+animation:neonmove 12s ease-in-out infinite alternate;
+}
+@keyframes neonmove{
+0%{filter:hue-rotate(0deg)}
+100%{filter:hue-rotate(15deg)}
+}
+@media(max-width:900px){
+.compare-grid,.testimonials,.category-links{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="page header">
+    <a class="logo" href="index.html#inicio"><strong>RETRO<span>START</span></strong><small>ARCADE MACHINES</small></a>
+    <nav class="nav">
+      <a href="index.html#inicio">INICIO</a>
+      <a class="active" href="index.html#modelos">MODELOS RETROSTART</a>
+      <a href="index.html#caracteristicas">CARACTERÍSTICAS</a>
+      <a href="index.html#contacto">CONTACTO</a>
+    </nav>
+    <a class="whatsapp" id="whTop" href="https://wa.me/56966610922" target="_blank" rel="noopener">☏ WHATSAPP</a>
+  </div>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <div>
+      <div class="kicker">FICHA PROFESIONAL RETROSTART</div>
+      <h1>Modelo <span id="heroName">Arcade</span></h1>
+      <p class="lead" id="heroDesc">Máquina arcade personalizada con terminación premium, sistema optimizado y experiencia lista para jugar.</p>
+      <div class="badges">
+        <span class="badge">Fabricación personalizada</span>
+        <span class="badge">Sistema bajo Windows</span>
+        <span class="badge">HyperSpin RetroStart</span>
+        <span class="badge">Soporte en Chile</span>
+      </div>
+      <div class="price-card">
+        <div><small>Precio referencial desde</small><strong id="price">$499.990 CLP</strong></div>
+        <a class="btn" id="whCta" href="#" target="_blank" rel="noopener">☏ CONSULTAR MODELO</a>
+      </div>
+      <div class="actions">
+        <a class="btn secondary" href="index.html#modelos">← VOLVER A MODELOS</a>
+      </div>
+    </div>
+    <div class="media"><img class="machine" id="machineImg" src="" alt="Máquina Arcade RetroStart"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Características <span>principales</span></h2>
+      <p>Tecnología, calidad y experiencia arcade premium.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">▣</div><h3>Gabinete profesional</h3><p>Gabinete arcade profesional con terminaciones premium, diseñado para ofrecer máxima resistencia, estabilidad y una apariencia moderna tipo showroom.</p></article>
+      <article class="card"><div class="icon">◎</div><h3>Arte personalizado</h3><p>Diseño gráfico temático según el modelo seleccionado, con impresión laminada para mayor protección y acabado premium.</p></article>
+      <article class="card"><div class="icon">✦</div><h3>Sistema RetroStart</h3><p>Equipo configurado bajo Windows con interfaz arcade tipo HyperSpin, navegación visual y colección de juegos organizada.</p></article>
+      <article class="card"><div class="icon">⚙</div><h3>Controles arcade</h3><p>Palancas y botones configurados para 2 jugadores, pensados para juegos clásicos de pelea, beat'em up, plataformas y arcade.</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">
+      <h2>Ficha <span>técnica</span></h2>
+      <p></p>
+    </div>
+    <div class="spec-table">
+      <div class="spec-row"><b>Sistema</b><span>Windows optimizado para arcade</span></div>
+      <div class="spec-row"><b>Interfaz</b><span>HyperSpin personalizado por RetroStart</span></div>
+      <div class="spec-row"><b>Jugadores</b><span>2 jugadores</span></div>
+      <div class="spec-row"><b>Controles arcade</b><span>Botones americanos premium y palanca japonesa profesional</span></div>
+      <div class="spec-row"><b>Catálogo</b><span>Juegos clásicos y modernos configurados</span></div>
+      <div class="spec-row"><b>Wurlitzer incorporado</b><span>Sistema musical integrado con más de 2500 temas musicales</span></div>
+      <div class="spec-row"><b>Terminación</b><span>Gráfica laminada y tapacantos nuevos</span></div>
+      
+      
+<div class="spec-row"><b>Garantía</b><span>Soporte y asesoría RetroStart en Chile</span></div>
+      <div class="spec-row"><b>Optimización exclusiva</b><span>Sistema configurado y optimizado profesionalmente por RetroStart para máxima estabilidad y rendimiento arcade</span></div>
+      <div class="spec-row"><b>Guardado de partidas</b><span>Única máquina arcade que permite guardar partidas y continuar el progreso en miles de juegos compatibles</span></div>
+
+    </div>
+  </section>
+
+  
+
+  
+<section class="section">
+  <div class="section-title">
+    <h2>Calidad <span>RetroStart</span></h2>
+    <p></p>
+  </div>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="icon">🖨</div>
+      <h3>Gráfica de máxima calidad</h3>
+      <p>
+        Todas las máquinas RetroStart utilizan impresión profesional de alta resolución realizada en nuestro propio plóter de impresión, permitiendo colores intensos, negros profundos y detalles nítidos con calidad de exhibición.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">✦</div>
+      <h3>Termolaminación premium</h3>
+      <p>
+        Cada gráfica recibe termolaminación profesional para proteger la superficie contra desgaste, rayaduras y humedad, logrando un acabado brillante, resistente y de máxima calidad visual.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🖥</div>
+      <h3>Windows 10 + HyperSpin Premium</h3>
+      <p>
+        Todas las máquinas RetroStart funcionan bajo Windows 10 optimizado profesionalmente para arcade, entregando máxima compatibilidad, estabilidad y rendimiento. El sistema utiliza interfaz HyperSpin personalizada por RetroStart, ofreciendo una experiencia visual moderna, fluida e inmersiva.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🎮</div>
+      <h3>1TB de almacenamiento</h3>
+      <p>
+        Incluye disco de 1 Terabyte configurado con una amplia colección de videojuegos arcade, consolas clásicas y sistemas modernos cuidadosamente organizados para acceso rápido y estabilidad.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="section-title">
+    <h2>¿Por qué <span>RetroStart?</span></h2>
+    <p>
+      
+    </p>
+  </div>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="icon">★</div>
+      <h3>Experiencia premium</h3>
+      <p>
+        Cada máquina está diseñada para ofrecer una experiencia arcade profesional con acabados tipo showroom y calidad visual de alto nivel.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🖨</div>
+      <h3>Producción propia</h3>
+      <p>
+        RetroStart cuenta con su propio plóter de impresión profesional y proceso de termolaminación premium para lograr gráficas de máxima calidad.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🖥</div>
+      <h3>Windows 10 + HyperSpin</h3>
+      <p>
+        Todas las máquinas funcionan bajo Windows 10 optimizado con interfaz HyperSpin personalizada por RetroStart para máxima compatibilidad y estabilidad.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="icon">🎮</div>
+      <h3>Arcade moderna</h3>
+      <p>
+        A diferencia de una arcade tradicional, RetroStart permite guardar partidas y continuar el progreso en miles de juegos compatibles.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-title">
+    <h2>RetroStart <span>vs Arcade Común</span></h2>
+    <p></p>
+  </div>
+
+  <div class="compare-grid">
+    <div class="compare-card retro">
+      <h3>RETROSTART PREMIUM</h3>
+      <ul>
+        <li>✔ Windows 10 optimizado</li>
+        <li>✔ HyperSpin profesional</li>
+        <li>✔ Disco duro de 1TB</li>
+        <li>✔ Guardado de partidas</li>
+        <li>✔ Wurlitzer con 2500 temas</li>
+        <li>✔ Impresión premium propia</li>
+        <li>✔ Termolaminación profesional</li>
+        <li>✔ Botones americanos premium</li>
+        <li>✔ Palanca japonesa profesional</li>
+      </ul>
+    </div>
+
+    <div class="compare-card">
+      <h3>ARCADE TRADICIONAL</h3>
+      <ul>
+        <li>✖ Sistemas antiguos limitados</li>
+        <li>✖ Disco duro limitado 320GB o 500GB</li>
+        <li>✖ Sin guardado de partidas</li>
+        <li>✖ Menús básicos</li>
+        <li>✖ Sin personalización avanzada</li>
+        <li>✖ Gráficas estándar</li>
+        <li>✖ Menor compatibilidad</li>
+        <li>✖ Sin optimización profesional</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <h2>Clientes <span>RetroStart</span></h2>
+    <p></p>
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>“La calidad de impresión y terminación supera cualquier arcade que haya visto antes.”</p>
+      <strong>CLIENTE RETROSTART</strong>
+    </div>
+
+    <div class="testimonial">
+      <p>“HyperSpin funciona increíblemente fluido y los juegos están perfectamente configurados.”</p>
+      <strong>ARCADE PREMIUM CHILE</strong>
+    </div>
+
+    <div class="testimonial">
+      <p>“El sistema Wurlitzer y el guardado de partidas hacen que esta máquina sea única.”</p>
+      <strong>CLIENTE SATISFECHO</strong>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section instagram-section">
+  <div class="section-title">
+    <h2>Experiencia <span>RetroStart</span></h2>
+  </div>
+
+  <div class="instagram-grid">
+
+    <div class="instagram-card">
+      <iframe src="https://www.instagram.com/reel/DEBXh_Wurb0/embed" allowfullscreen></iframe>
+    </div>
+
+    <div class="instagram-card">
+      <iframe src="https://www.instagram.com/reel/DE5KhhQOzTJ/embed" allowfullscreen></iframe>
+    </div>
+
+    <div class="instagram-card">
+      <iframe src="https://www.instagram.com/reel/DJxnsG0up5G/embed" allowfullscreen></iframe>
+    </div>
+
+    <div class="instagram-card">
+      <iframe src="https://www.instagram.com/reel/DHo8ddQOPbC/embed" allowfullscreen></iframe>
+    </div>
+
+    <div class="instagram-card">
+      <iframe src="https://www.instagram.com/reel/DD_EURwuGPr/embed" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <div class="instagram-button-wrap">
+    <a class="instagram-button"
+       href="https://www.instagram.com/retrostart_cl/"
+       target="_blank">
+       VER MÁS EN INSTAGRAM
+    </a>
+  </div>
+</section>
+
+<style>
+.instagram-section{
+padding:60px 0;
+}
+
+.instagram-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
+margin-top:30px;
+}
+
+.instagram-card{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 0 35px rgba(255,24,15,.12);
+transition:.3s;
+}
+
+.instagram-card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 45px rgba(255,24,15,.28);
+}
+
+.instagram-card iframe{
+width:100%;
+height:540px;
+border:none;
+background:#000;
+}
+
+.instagram-button-wrap{
+display:flex;
+justify-content:center;
+margin-top:36px;
+}
+
+.instagram-button{
+padding:18px 34px;
+border-radius:18px;
+background:linear-gradient(90deg,#ff180f,#ff5a1f);
+color:#fff;
+text-decoration:none;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+letter-spacing:1px;
+box-shadow:0 0 25px rgba(255,24,15,.35);
+transition:.3s;
+}
+
+.instagram-button:hover{
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+.instagram-card iframe{
+height:480px;
+}
+}
+</style>
+
+<section class="final-cta">
+
+
+    <div>
+      <h2>¿Quieres este modelo?</h2>
+      <p>Consulta disponibilidad, personalización, forma de pago y despacho.</p>
+    </div>
+    <a class="btn" id="whBottom" href="https://wa.me/56966610922" target="_blank" rel="noopener">☏ HABLAR POR WHATSAPP</a>
+  </section>
+</main>
+
+<a class="floating-whatsapp" id="whFloat" href="#" target="_blank" rel="noopener">✆</a>
+
+<script>
+const MODELOS=[{"title": "AC/DC", "slug": "ac-dc", "image": "assets/acdc.webp", "description": "Máquina arcade premium modelo AC/DC, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Avengers", "slug": "avengers", "image": "assets/avengers.webp", "description": "Máquina arcade premium modelo Avengers, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Canserbero", "slug": "canserbero", "image": "assets/canserbero.webp", "description": "Máquina arcade premium modelo Canserbero, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Colo-Colo", "slug": "colo-colo", "image": "assets/colocolo.webp", "description": "Máquina arcade premium modelo Colo-Colo, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Dragon Ball Super", "slug": "dragon-ball-super", "image": "assets/dragon_ball_super.webp", "description": "Máquina arcade premium modelo Dragon Ball Super, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Iron Maiden", "slug": "iron-maiden", "image": "assets/iron_maiden_arcade.webp", "description": "Máquina arcade premium modelo Iron Maiden, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Jack Daniel’s", "slug": "jack-daniels", "image": "assets/jack_daniels.webp", "description": "Máquina arcade premium modelo Jack Daniel’s, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Killer Instinct", "slug": "killer-instinct", "image": "assets/killer_instinct.webp", "description": "Máquina arcade premium modelo Killer Instinct, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Linkin Park", "slug": "linkin-park", "image": "assets/linkin_park.webp", "description": "Máquina arcade premium modelo Linkin Park, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Metallica", "slug": "metallica", "image": "assets/metallica_lightning.webp", "description": "Máquina arcade premium modelo Metallica, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Mortal Kombat", "slug": "mortal-kombat", "image": "assets/mortal_kombat_full.webp", "description": "Máquina arcade premium modelo Mortal Kombat, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Mortal Kombat II", "slug": "mortal-kombat-ii", "image": "assets/mortal_kombat_ii_neon.webp", "description": "Máquina arcade premium modelo Mortal Kombat II, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Nintendo Retro", "slug": "nintendo-retro", "image": "assets/mario_retro.webp", "description": "Máquina arcade premium modelo Nintendo Retro, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "One Piece", "slug": "one-piece", "image": "assets/master_piece.webp", "description": "Máquina arcade premium modelo One Piece, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Pac-Man Classic", "slug": "pac-man-classic", "image": "assets/pacman_classic.webp", "description": "Máquina arcade premium modelo Pac-Man Classic, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Pac-Man Neon", "slug": "pac-man-neon", "image": "assets/pacman_neon.webp", "description": "Máquina arcade premium modelo Pac-Man Neon, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Queen", "slug": "queen", "image": "assets/queen.webp", "description": "Máquina arcade premium modelo Queen, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Red Bull Racing", "slug": "red-bull-racing", "image": "assets/red_bull_racing.webp", "description": "Máquina arcade premium modelo Red Bull Racing, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Sepultura", "slug": "sepultura", "image": "assets/sepultura_roots.webp", "description": "Máquina arcade premium modelo Sepultura, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Slam Dunk", "slug": "slam-dunk", "image": "assets/slam_dunk.webp", "description": "Máquina arcade premium modelo Slam Dunk, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Space Invaders", "slug": "space-invaders", "image": "assets/space_invaders.webp", "description": "Máquina arcade premium modelo Space Invaders, fabricada por RetroStart con terminación profesional, gráfica retro espacial personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Star Wars", "slug": "star-wars", "image": "assets/star_wars.webp", "description": "Máquina arcade premium modelo Star Wars, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Street Fighter V", "slug": "street-fighter-v", "image": "assets/street_fighter_v.webp", "description": "Máquina arcade premium modelo Street Fighter V, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Super Smash Bros", "slug": "super-smash-bros", "image": "assets/super_smash_bros.webp", "description": "Máquina arcade premium modelo Super Smash Bros, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "Tekken", "slug": "tekken", "image": "assets/tekken.webp", "description": "Máquina arcade premium modelo Tekken, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}, {"title": "The Godfather", "slug": "the-godfather", "image": "assets/el_padrino.webp", "description": "Máquina arcade premium modelo The Godfather, fabricada por RetroStart con terminación profesional, gráfica personalizada y sistema preparado para juegos clásicos y modernos.", "price": "$499.990", "specs": ["Más de 12.000 juegos arcade clásicos y modernos", "Sistema RetroStart en ambiente Windows 10", "HyperSpin optimizado por RetroStart", "10 botones por jugador", "Estructura de MDF de alta calidad", "Gráfica laminada premium", "Iluminación LED RGB opcional", "Soporte y asesoría en Chile"]}];
+const params=new URLSearchParams(window.location.search);
+const slug=params.get('modelo')||params.get('m')||'pac-man-classic';
+const data=MODELOS.find(m=>m.slug===slug)||MODELOS.find(m=>m.slug==='pac-man-classic')||MODELOS[0];
+
+const descripcion='Máquina arcade premium modelo '+data.title+', fabricada por RetroStart con gráfica personalizada, gabinete profesional y sistema arcade listo para jugar.';
+document.title='RetroStart | Modelo '+data.title;
+document.getElementById('heroName').textContent=data.title;
+document.getElementById('heroDesc').textContent=descripcion;
+document.getElementById('machineImg').src=data.image;
+document.getElementById('machineImg').alt='Máquina Arcade '+data.title+' RetroStart';
+['thumb1','thumb2','thumb3','thumb4'].forEach(id=>{
+const thumb=document.getElementById(id);
+if(thumb){
+thumb.src=data.image;
+}
+});
+document.getElementById('price').textContent='$499.990 CLP';
+
+const phone='56966610922';
+
+const imageUrl = new URL(data.image, window.location.href).href;
+
+const msg = encodeURIComponent(
+  'Hola RetroStart, estoy interesado en el modelo "' +
+  data.title +
+  '"' +
+  '\n\nImagen del modelo:\n' +
+  imageUrl
+);
+
+const wh = 'https://wa.me/' + phone + '?text=' + msg;
+
+['whTop','whCta','whBottom','whFloat'].forEach(id=>{
+  const btn=document.getElementById(id);
+  if(btn){
+    btn.href=wh;
+  }
+});
+</script>
+
+
+</body>
+
+</html>
