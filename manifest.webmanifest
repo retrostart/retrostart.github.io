@@ -1,0 +1,24 @@
+{
+  "name": "RetroStart Arcade Systems",
+  "short_name": "RetroStart",
+  "description": "Máquinas arcade premium en Chile con HyperSpin optimizado y ambiente Windows 10.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/iron_maiden_arcade.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
